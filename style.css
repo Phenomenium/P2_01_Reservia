@@ -1,0 +1,598 @@
+@charset "UTF-8";
+
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/*----------------------------*\
+    $ CORP DE LA PAGE
+\*----------------------------*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+#container-fluid {
+    margin: 0 50px 50px;
+}
+.flexbox, .menu {
+    display: flex;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*----------------------------*\
+    $ HEADER
+\*----------------------------*/
+header {
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+#logo {
+    flex: 1;
+    margin-top: 30px;
+}
+nav ul li {
+    padding-top: 40px;
+}
+nav ul li a {
+    padding: 40px 30px 0;
+}
+#inscription {
+    color: #0065FC;
+    font-weight: 700;
+    padding: 40px 40px 0;
+}
+nav ul li a:hover{
+    color: #0065FC;
+    border-top: 4px solid #0065FC;
+    padding-top: 36px;
+}
+#inscription:hover {
+    color: #deebff;
+}
+/*----------------------------*\
+    $ SECTION RECHERCHE
+\*----------------------------*/
+.recherche {
+    margin-bottom: 30px;
+}
+.recherche h2 {
+    margin-bottom: 10px;
+}
+.recherche p {
+    margin-top: 10px;
+}
+form {
+    display: flex;
+}
+.barre_recherche {
+    margin-bottom: 30px;
+    height: 50px;
+}
+.icon_recherche {
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+    flex-shrink: 0;
+}
+.icon_recherche i {
+    margin: 15px 0 0 18px;
+    font-size: 1.5rem;
+}
+.champ_recherche {
+    border: 1px solid #f2f2f2;
+    padding: 0 0 0 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 230px; 
+}
+.champ_recherche::placeholder {
+    color: #000;
+}
+.bouton_recherche {
+    width: 130px;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.bouton_recherche i {
+    display: none;
+}
+
+/*-- FILTRES--*/
+.Les_filtres, .liste_filtre, .filtre, .icon_filtre, .information, .icon_information, .icon_information i {
+    display: flex;
+}
+.texte_filtre {
+    align-self: center;
+}
+.Les_filtres {
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+.liste_filtre {
+    flex-wrap: wrap;
+}
+.filtre {
+    align-items: center;
+    height: 46px;
+    border: 3px solid #f2f2f2;
+    border-left: none;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+.filtre span {
+    padding-left: 12px;
+}
+.filtre:hover {
+    cursor: pointer;
+    border-color: #0065FC;
+    color: #0065FC;
+}
+.icon_filtre {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #deebff;
+}
+.icon_filtre i {
+    color: #0065fc;
+    margin: 16px 0 0 15px;
+}
+.information {
+    flex-direction: row;
+    align-items: center;
+}
+.icon_information {
+    height: 25px;
+    width: 25px;
+    border: 3px solid #f2f2f2;
+    border-radius: 2rem;
+    margin-right: 10px;
+}
+.icon_information i {
+    margin: auto;
+    font-size: .9rem;
+    color: #0065FC;
+}
+/*----------------------------------*\
+    $ SECTIONS HOTELS ET POPULAIRES
+\*----------------------------------*/
+    /*-----Section Hôtels-----*/
+.container_Hotels-Populaires, .description_hotel, .icon_populaire, .photos_populaires, .description_populaire {
+    display: flex;
+}
+.prix {
+    font-weight: 600;
+}
+.hotels, .populaire {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 40px;
+}
+.hotels {
+    flex: 2;
+}
+.hotels h2 {
+    margin: 0;
+}
+.presentation_hotels {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 30px;/* espace verticale */
+    margin: 30px 0 50px;
+}
+.photos_hotels {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 40%;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #c1c1c1;
+    transition-duration: 0.1s;
+}
+.photos_hotels:hover {
+    transform: scale(1.01);
+}
+.photos_hotels img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.description_hotel {
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+.description_hotel p {
+    margin: 0;
+}
+.note_hotel {
+    word-spacing: -1ch; /* pour réduire l'espacement entre les étoiles */
+}
+.fa fa-Star {
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+.blueStar{
+    color: #0065FC;
+}
+
+.greyStar{
+    color: #c1c1c1;
+}
+.hotel_recherche {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.hotel_recherche:hover {
+    color: #0065fc;
+}
+
+    /*-----Section Populaires-----*/
+.populaire {
+    flex: 1;
+    margin-left: 3%;
+}
+.icon_populaire {
+    justify-content: space-between;
+    align-items: baseline;
+}
+.icon_populaire h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.icon_populaire i {
+    font-size: 1.5rem;
+}
+.photos_populaires {
+    height: 145px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 7px #c1c1c1;
+    overflow: hidden;
+    transition-duration: 0.1s;
+}
+.photos_populaires:hover {
+    transform: scale(1.01);
+}
+.photos_populaires img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+.description_populaire {
+    flex: 1;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+.nom_hotel {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/*----------------------------*\
+    $ SECTION ACTIVITES
+\*----------------------------*/
+.activites {
+    margin-bottom: 3rem;
+}
+.texte_activites {
+    margin-bottom: 2rem;
+}
+.presentation_activites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2rem;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    border-radius: 1.5rem;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.1s;
+}
+.box:hover {
+    transform: scale(1.01);
+}
+.activite_1 {
+    grid-area: 1 / 1 / 3 / 2;
+}
+.activite_2 {
+    grid-area: 1 / 2 / 2 / 3;
+    display: block;
+}
+.activite_3 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+.activite_4 {
+    grid-area: 1 / 3 / 3 / 4;
+}
+.activite_5 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+.activite_6 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+.Photos_activites {
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.Photo_grande {
+    height: 30rem;
+}
+.titre_activite {
+    padding: 1rem;
+}
+
+/*----------------------------*\
+    $ FOOTER
+\*----------------------------*/
+
+.foot {
+    display: flex;
+    padding: 40px 50px 50px;
+    background-color: #f2f2f2;
+}
+.foot div {
+    flex: 1;
+}
+.foot li {
+    margin-bottom: 15px;
+}
+.foot a:hover {
+    font-weight: 700;
+    color: #0065FC;
+}
+
+/*----------------------------------*\
+    $ Responsive
+\*----------------------------------*/
+@media screen and (max-width: 768px) {
+    
+    /*--Corp de page--*/
+    #container-fluid {
+        margin: 0;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    /*--Header--*/
+    .flexbox {
+        margin: 0;
+        flex-direction: column;
+    }
+    #logo{
+        margin-left: 20px;
+    }
+    #inscription {
+        align-self: flex-end;
+        padding: 0;
+        margin-right: 20px;
+        position: relative;
+        bottom: 30px;
+    }
+    nav{
+        order: 3;
+    }
+    
+    nav ul{
+        width: 100%;
+    }
+
+    nav li{
+        width: 50%;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 3px solid #f2f2f2;
+    }
+
+    nav li a{
+        padding: inherit;
+    }
+
+    nav ul li a:hover {
+        border-top: none;
+    }
+
+    nav li:hover{
+        border-bottom-color: #0065FC;
+    }
+    /*--Section recherche--*/
+    .recherche {
+        margin: 35px 0 30px;
+    }
+    .recherche h2 {
+        margin-left: 20px;
+        font-size: 1.4rem;
+    }
+    .recherche p {
+        margin-left: 20px;
+        font-size: 1.2rem;
+    }
+    .barre_recherche {
+        margin: 35px 30px 30px;
+    }
+    .champ_recherche {
+        flex: 1;
+    }
+    .bouton_recherche {
+        position: relative;
+        width: 50px;
+        border-radius: 15px;
+        left: -20px;
+    }
+    .bouton_recherche span {
+        display: none;
+    }
+    .bouton_recherche i {
+        display: inline-block;
+    }
+      /*--Filtres--*/
+    .Les_filtres {
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+    .texte_filtre {
+        align-self: auto;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    .liste_filtre {
+        margin: 0rem 1rem 1rem 0;
+    }
+    .filtre {
+        margin-bottom: 1rem;
+    }
+    .information {
+        margin-left: 20px;
+    }
+    /*--Section Hôtels et Populaires--*/
+        /*--Section Populaires--*/ 
+    .populaire {
+        border-radius: 0;
+        padding: 40px 20px 30px;
+        margin-bottom: 40px;
+        margin-left: auto;
+    }
+    .photos_populaires {
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    .icon_populaire i {
+        font-size: 1.3rem;
+    }
+    .nom_hotel {
+        font-size: 1rem !important;
+    }
+    .description_populaire {
+        padding: 15px 10px 10px 20px;
+    }
+    .description_populaire p {
+        font-size: .9rem;
+    }
+    .fa-star{
+        font-size: .8rem !important;
+        letter-spacing: 1px;
+    }
+        /*--Section Hôtels--*/
+    .container_Hotels-Populaires {
+        flex-direction: column;
+    }
+    .hotels {
+        padding: 0 20px;
+        background-color: initial;
+    }
+    .photos_hotels {
+        height: 200px;
+    }
+    .presentation_hotels {
+        grid-template: repeat(6, 1fr) / 1fr;
+        gap: 15px;
+    }
+    .description_hotel p {
+        font-size: .9rem;
+    }
+    
+    /*--Section Activités--*/
+    .activites {
+        padding: 0rem 1.5rem;
+    }
+    .presentation_activites {
+        display: flex;
+        flex-direction: column;
+/*        margin: auto;*/
+    }
+    .texte_activites {
+        margin-left: auto;
+    }
+    /*--Footer--*/
+    .foot {
+        display: flex;
+        flex-direction: column;
+        padding: 45px 30px;
+    }
+    .foot div {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .container_Hotels-Populaires {
+        flex-direction: column;
+    }
+
+    /*--Filtres--*/
+    .Les_filtres {
+        flex-direction: column;
+    }
+    .liste_filtre {
+        margin-left: 20px;
+    }
+    .texte_filtre {
+        align-self: auto;
+        margin-bottom: 15px;
+    }
+    .filtre {
+        margin: 0 1rem 1rem 0;
+    }
+    /*--Section Populaires--*/
+    .populaire {
+        margin: 0 0 20px;
+    }
+    .photos_populaires {
+        height: 180px;
+    }
+    .description_populaire, .nom_hotel {
+        font-size: 1.4rem;
+    }
+    .description_populaire p {
+        font-size: 1.2rem;
+    }
+    .description_populaire .fa-star {
+        font-size: 1rem;
+    }
+    .hotels {
+        order: 2;
+    }
+    /*--Footer--*/
+    .foot div {
+        padding: 10px;
+    }
+}
+
+
