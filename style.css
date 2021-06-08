@@ -185,7 +185,7 @@ form {
     display: flex;
 }
 .prix {
-    font-weight: 600;
+    font-weight: 700;
 }
 .hotels, .populaire {
     background-color: #f2f2f2;
@@ -570,6 +570,7 @@ form {
     .filtre {
         margin: 0 1rem 1rem 0;
     }
+
     /*--Section Populaires--*/
     .populaire {
         margin: 0 0 20px;
@@ -589,6 +590,7 @@ form {
     .hotels {
         order: 2;
     }
+    
     /*--Section Activités--*/
     .presentation_activites {
         grid-template-columns: repeat(3, 1fr);
