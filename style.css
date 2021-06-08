@@ -381,7 +381,7 @@ form {
 /*----------------------------------*\
     $ Responsive
 \*----------------------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     
     /*--Corp de page--*/
     #container-fluid {
@@ -550,7 +550,7 @@ form {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1264px) {
     
     .container_Hotels-Populaires {
         flex-direction: column;
@@ -588,6 +588,38 @@ form {
     }
     .hotels {
         order: 2;
+    }
+    /*--Section Activités--*/
+    .presentation_activites {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .activite_1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .activite_2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .activite_3 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .activite_4 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .activite_5 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .activite_6 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .Photo_grande {
+        height: 11rem;
     }
     /*--Footer--*/
     .foot div {
