@@ -517,7 +517,7 @@ form {
         background-color: initial;
     }
     .photos_hotels {
-        height: 200px;
+        height: auto;
     }
     .presentation_hotels {
         grid-template: repeat(6, 1fr) / 1fr;
