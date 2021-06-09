@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /* font-family: 'Raleway', sans-serif; */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 /*----------------------------*\
@@ -62,9 +63,11 @@ nav ul li a:hover{
 #inscription:hover {
     color: #deebff;
 }
+
 /*----------------------------*\
     $ SECTION RECHERCHE
 \*----------------------------*/
+
 .recherche {
     margin-bottom: 30px;
 }
@@ -118,6 +121,7 @@ form {
 }
 
 /*-- FILTRES--*/
+
 .Les_filtres, .liste_filtre, .filtre, .icon_filtre, .information, .icon_information, .icon_information i {
     display: flex;
 }
@@ -177,10 +181,13 @@ form {
     font-size: .9rem;
     color: #0065FC;
 }
+
 /*----------------------------------*\
     $ SECTIONS HOTELS ET POPULAIRES
 \*----------------------------------*/
+
     /*-----Section Hôtels-----*/
+
 .container_Hotels-Populaires, .description_hotel, .icon_populaire, .photos_populaires, .description_populaire {
     display: flex;
 }
@@ -254,6 +261,7 @@ form {
 }
 
     /*-----Section Populaires-----*/
+
 .populaire {
     flex: 1;
     margin-left: 3%;
@@ -302,6 +310,7 @@ form {
 /*----------------------------*\
     $ SECTION ACTIVITES
 \*----------------------------*/
+
 .activites {
     margin-bottom: 3rem;
 }
@@ -384,6 +393,7 @@ form {
 @media screen and (max-width: 500px) {
     
     /*--Corp de page--*/
+    
     #container-fluid {
         margin: 0;
     }
@@ -391,6 +401,7 @@ form {
         font-size: 1.4rem;
     }
     /*--Header--*/
+    
     .flexbox {
         margin: 0;
         flex-direction: column;
@@ -432,6 +443,7 @@ form {
         border-bottom-color: #0065FC;
     }
     /*--Section recherche--*/
+    
     .recherche {
         margin: 35px 0 30px;
     }
@@ -462,6 +474,7 @@ form {
         display: inline-block;
     }
       /*--Filtres--*/
+    
     .Les_filtres {
         flex-direction: column;
         margin-bottom: 12px;
@@ -481,7 +494,9 @@ form {
         margin-left: 20px;
     }
     /*--Section Hôtels et Populaires--*/
+    
         /*--Section Populaires--*/ 
+    
     .populaire {
         border-radius: 0;
         padding: 40px 20px 30px;
@@ -509,6 +524,7 @@ form {
         letter-spacing: 1px;
     }
         /*--Section Hôtels--*/
+    
     .container_Hotels-Populaires {
         flex-direction: column;
     }
@@ -528,6 +544,7 @@ form {
     }
     
     /*--Section Activités--*/
+    
     .activites {
         padding: 0rem 1.5rem;
     }
@@ -539,7 +556,9 @@ form {
     .texte_activites {
         margin-left: auto;
     }
+    
     /*--Footer--*/
+    
     .foot {
         display: flex;
         flex-direction: column;
@@ -557,6 +576,7 @@ form {
     }
 
     /*--Filtres--*/
+    
     .Les_filtres {
         flex-direction: column;
     }
@@ -572,6 +592,7 @@ form {
     }
 
     /*--Section Populaires--*/
+    
     .populaire {
         margin: 0 0 20px;
     }
@@ -592,6 +613,7 @@ form {
     }
     
     /*--Section Activités--*/
+    
     .presentation_activites {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -624,6 +646,7 @@ form {
         height: 11rem;
     }
     /*--Footer--*/
+    
     .foot div {
         padding: 10px;
     }
