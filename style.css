@@ -390,7 +390,8 @@ form {
 /*----------------------------------*\
     $ Responsive
 \*----------------------------------*/
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 600px) {
     
     /*--Corp de page--*/
     
@@ -533,7 +534,10 @@ form {
         background-color: initial;
     }
     .photos_hotels {
-        height: auto;
+        height: 250px;
+    }
+    .photos_hotels img {
+        height: 150px;
     }
     .presentation_hotels {
         grid-template: repeat(6, 1fr) / 1fr;
@@ -566,6 +570,15 @@ form {
     }
     .foot div {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .photos_hotels {
+        height: 300px;
+    }
+    .photos_hotels img {
+        height: 180px;
     }
 }
 
