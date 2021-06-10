@@ -391,7 +391,7 @@ form {
     $ Responsive
 \*----------------------------------*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     
     /*--Corp de page--*/
     
@@ -571,10 +571,10 @@ form {
 
 @media screen and (max-width: 1024px) {
     .photos_hotels {
-        height: 260px;
+        height: 280px;
     }
     .photos_hotels img {
-        height: 150px;
+        height: 160px;
     }
 }
 
