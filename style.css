@@ -196,7 +196,7 @@ form {
 }
 .hotels, .populaire {
     background-color: #f2f2f2;
-    border-radius: 20px;
+    border-radius: 1.5rem;
     padding: 40px;
 }
 .hotels {
@@ -216,7 +216,7 @@ form {
     height: 100%;
     grid-template-rows: 1fr 40%;
     border: 5px solid #fff;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     overflow: hidden;
     box-shadow: 0 0 7px #c1c1c1;
     transition-duration: 0.1s;
@@ -280,7 +280,7 @@ form {
 .photos_populaires {
     height: 145px;
     border: 5px solid #fff;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     margin-bottom: 30px;
     box-shadow: 0 0 7px #c1c1c1;
     overflow: hidden;
@@ -401,6 +401,7 @@ form {
     h2 {
         font-size: 1.4rem;
     }
+    
     /*--Header--*/
     
     .flexbox {
@@ -533,18 +534,13 @@ form {
         padding: 0 20px;
         background-color: initial;
     }
-    .photos_hotels {
-        height: 250px;
-    }
-    .photos_hotels img {
-        height: 150px;
-    }
     .presentation_hotels {
         grid-template: repeat(6, 1fr) / 1fr;
         gap: 15px;
     }
-    .description_hotel p {
-        font-size: .9rem;
+    .nom_hotel {
+        font-size: 1.3rem;
+        font-weight: 700;
     }
     
     /*--Section Activités--*/
@@ -575,10 +571,10 @@ form {
 
 @media screen and (max-width: 1024px) {
     .photos_hotels {
-        height: 300px;
+        height: 260px;
     }
     .photos_hotels img {
-        height: 180px;
+        height: 150px;
     }
 }
 
