@@ -571,10 +571,20 @@ form {
 
 @media screen and (max-width: 1024px) {
     .photos_hotels {
-        height: 280px;
+        height: 285px;
     }
     .photos_hotels img {
-        height: 160px;
+        height: 150px;
+    }
+    .nom_hotel {
+        font-size: 1rem;
+    }
+    .presentation_hotels {
+        gap: 30px;
+        height: 100%;   
+    }
+    .nom_hotel {
+        font-size: 1.1rem !important;
     }
 }
 
